@@ -28,5 +28,9 @@ named "GRANDIA".  The tool will refuse to overwrite, so you need to rename the
 first disc before ripping the second.
 
 For PS2, I have imported the code from
-https://github.com/workhorsy/identify_playstation2_games 
+https://github.com/workhorsy/identify_playstation2_games
 in order to automatically name the games that are ripped via DVD.
+
+## Docker
+
+`Dockerfile` provides a docker image which installs the necessary dependencies for the scripts and automatically clones this repository. I use this on my Unraid server to rip my PS1 and PS2 games.
