@@ -34,3 +34,5 @@ in order to automatically name the games that are ripped via DVD.
 ## Docker
 
 `Dockerfile` provides a docker image which installs the necessary dependencies for the scripts and automatically clones this repository. I use this on my Unraid server to rip my PS1 and PS2 games.
+
+I currently have this published on Docker Hub as [`sytedev/ps-ripper`](https://hub.docker.com/r/sytedev/ps-ripper).
