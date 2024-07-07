@@ -160,7 +160,7 @@ def _find_in_binary(file_name):
 
 		# Check if the prefix is in the buffer
 		for prefix in PREFIXES:
-			m = re.search(prefix + b"[\_|\-][\d|\.]+\;", rom_data)
+			m = re.search(prefix + bytes(r"[\_|\-][\d|\.]+\;", "utf-8"), rom_data)
 			if m and m.group() and b'999.99' not in m.group():
 				# Get the serial number location
 				serial_number = m.group().replace(b'.', b'').replace(b'_', b'-').replace(b';', b'')
