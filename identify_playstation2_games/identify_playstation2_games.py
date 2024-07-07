@@ -126,7 +126,7 @@ dbs = [
 ]
 for db in dbs:
 	keys = db.keys()
-	for key in keys:
+	for key in list(keys):
 		# Get the value
 		val = db[key]
 
